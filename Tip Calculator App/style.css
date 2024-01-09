@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --StrongCyan: hsl(172, 67%, 45%);
+    --VeryDarkCyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan: hsl(186, 14%, 43%);
+    --GrayishCyan: hsl(184, 14%, 56%);
+    --LightGrayishCyan: hsl(185, 41%, 84%);
+    --VeryLightGrayishCyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --Font: 'Space Mono';
+}
+body{
+    background-color: var(--LightGrayishCyan);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#calc__section{
+    position: relative;
+    top: -130px;
+   background-color: var(--White);
+   width: clamp(40vw, 50vw, 60vw );
+   height: fit-content;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.article{
+    font-family: var(--Font) ;
+    width: 50%;
+    margin: 2em;
+    border-radius: 20px;
+    height: 45vh;
+    
+}
+.left{
+    background-color: var(--VeryDarkCyan);
+   color: var(--White);
+}
+.tip__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    gap: 2em;
+}
+.tip{
+    display: flex;
+    flex-direction: row;
+}
+.people{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+.people__text{
+    font-size: 1em;
+    font-family: var(--Font);
+}
+.people__span{
+    color: var(--DarkGrayishCyan);
+    font-size: 1em;
+}
+.money{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.money__text{
+    font-size: 3em;
+    color: var(--StrongCyan);
+}
+.reset{
+    background-color: var(--StrongCyan);
+    width: 80%;
+    height: 5vh;
+    border: transparent;
+    font-size: 2em;
+    font-family: var(--Font);
+    color: var(--DarkGrayishCyan);
+    border-radius: 5px;
+}
+.button__box{
+   
+    display: flex;
+    justify-content: center;
+    position: relative;
+        top: 100px;
+}
