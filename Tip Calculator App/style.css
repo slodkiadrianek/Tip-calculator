@@ -35,10 +35,13 @@ body{
 .article{
     font-family: var(--Font) ;
     width: 50%;
-    margin: 2em;
+    margin: 1.8vw;
     border-radius: 20px;
     height: 45vh;
-    
+}
+.right{
+    margin-right: 0em;
+    margin-left: 3em;
 }
 .left{
     background-color: var(--VeryDarkCyan);
@@ -50,6 +53,7 @@ body{
     justify-content: center;
     padding: 2em;
     gap: 2em;
+    padding-bottom: 0em;
 }
 .tip{
     display: flex;
@@ -62,12 +66,12 @@ body{
     justify-content: center;
 }
 .people__text{
-    font-size: 1em;
+    font-size: .8vw;
     font-family: var(--Font);
 }
 .people__span{
     color: var(--DarkGrayishCyan);
-    font-size: 1em;
+    font-size: .8vw;
 }
 .money{
     width: 50%;
@@ -75,23 +79,136 @@ body{
     justify-content: end;
 }
 .money__text{
-    font-size: 3em;
+    font-size: 2.7vw;
     color: var(--StrongCyan);
 }
 .reset{
     background-color: var(--StrongCyan);
+    filter: grayscale(1000%);
+    opacity: 0.4;
     width: 80%;
     height: 5vh;
     border: transparent;
-    font-size: 2em;
+    font-size: 1.2em;
     font-family: var(--Font);
     color: var(--DarkGrayishCyan);
     border-radius: 5px;
 }
 .button__box{
-   
     display: flex;
     justify-content: center;
     position: relative;
-        top: 100px;
+    top: 6vw;
 }
+.bill__amount{
+    margin-top: 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    width: 100%;
+    height: 5vh;
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 17px 15px;
+    border: transparent;
+    text-align: right;
+    color: var(--VeryDarkCyan);
+    font-family: var(--Font);
+    font-size: 1.8vw;
+}
+.span__box{
+    display: flex;
+    justify-content: space-between;
+}
+.bill{
+    color: var(--DarkGrayishCyan);
+    font-size: 0.8vw;
+}
+.bill__percent{
+    margin-block-start: 1.7vw;
+    margin-block-end: 2vw;
+}
+.percent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2vw;
+    margin-top: 1em;
+    height: 11vh;
+}
+.box{
+    background-color: var(--VeryDarkCyan);
+    color: var(--White);
+    border-radius:5px;
+    height: 5vh;
+    width: 6vw;
+    font-size: 1.4vw;
+    border: transparent;
+    font-family: var(--Font);
+}
+.box:hover{
+    background-color: var(--LightGrayishCyan);
+    color: var(--VeryDarkCyan);
+    cursor: pointer;
+}
+.box:focus{
+    background-color: var(--StrongCyan);
+    color: var(--VeryDarkCyan);
+    cursor: pointer;
+}
+
+.input__percent{
+    background-color: var(--White);
+    color: var(--VeryDarkCyan);
+    text-align: center;
+    border-radius: 5px;
+    height: 5vh;
+    width: 6vw;
+    font-size: 1.4vw ;
+    border: transparent;
+    font-family: var(--Font);
+}
+.input__percent:hover{
+    background-color: var(--White);
+}
+.input__percent:focus{
+    background-color: var(--White);
+    border: 3px solid var(--StrongCyan);
+    outline: none;
+}
+
+.input__percent::placeholder{
+    color: var(--GrayishCyan);
+    font-size: 1.4vw;
+    text-align: center;
+}
+.percent__class{
+    color: var(--DarkGrayishCyan);
+    font-size: 0.8vw;
+}
+.warning{
+    color: rgb(253, 118, 118);
+}
+.input__number{
+    background-image: url(images/icon-person.svg);
+}
+.input:focus{
+    outline: 3px solid var(--StrongCyan);
+    border-radius: 5px;
+}
+.input__box{
+    margin-top: 0.3vw;
+}
+.input::placeholder{
+    color: var(--GrayishCyan);
+}
+
+.reset__active{
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.reset__active:hover{
+    cursor: pointer;
+    background-color: var(--LightGrayishCyan);
+}
+

@@ -6,6 +6,7 @@
     <title>Tip calculator app</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon-32x32.png">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <figure>
@@ -13,7 +14,34 @@
     </figure>
    <section id="calc__section">
         <article class="article right">
-            <div>sda</div>
+            <div class="bill__amount">
+                <div class="span__box">
+                     <span class="bill">Bill</span> 
+                </div>
+                <div class="input__box">
+                <input class="input input__amount" type="number" placeholder="0">
+                </div>
+            </div>
+            <div class="bill__percent">
+                <span class="percent__class">Select tip %</span>
+                <div class="percent">
+                    <button class="box">5%</button>
+                    <button class="box">10%</button>
+                    <button class="box">15%</button>
+                    <button class="box">25%</button>
+                    <button class="box">50%</button>
+                    <input class=" input__percent" type="number" placeholder="Custom">
+                </div>
+            </div>
+            <div class="bill__number">
+                <div class="span__box">
+                    <span class="bill">Number of People</span>
+                    <span  class="warning"></span>
+                </div>
+                <div class="input__box">
+                    <input class="input input__number" type="number" placeholder="0">
+                </div>
+            </div>
         </article>
         <article class="article left">
             <div class="tip__box">
@@ -23,16 +51,16 @@
                         <span class="people__span" >/ person</span>
                     </div>
                     <div class="money">
-                        <h2 class="money__text">$32.00</h2>
+                        <h2 class="money__text tip__amount">$0.00</h2>
                     </div>
                 </div>
                 <div class="tip all">
                     <div class="people">
                         <h3 class="people__text">Total Amount</h3>
-                        <span class="people__span">/ person</span>
+                        <span class="people__span ">/ person</span>
                     </div>
                     <div class="money">
-                        <h2 class="money__text">$32.00</h2>
+                        <h2 class="money__text tip__total" >$0.00</h2>
                     </div>
                 </div>
             </div>
